@@ -16,17 +16,17 @@ const Gallery = () => {
       <h1>BETTER BEATS BEST</h1>
       <div className="images">
         <div>
-          {gallery.slice(0,2).map((element ,index) =>(
+          {gallery.slice(0,3).map((element ,index) =>(
+            <img key={index} src={element} alt="galleryImage" />
+          ))}
+        </div>
+        <div>
+          {gallery.slice(6,9).map((element ,index) =>(
             <img key={index} src={element} alt="galleryImage" />
           ))}
         </div>
         <div>
           {gallery.slice(3,5).map((element ,index) =>(
-            <img key={index} src={element} alt="galleryImage" />
-          ))}
-        </div>
-        <div>
-          {gallery.slice(6,8).map((element ,index) =>(
             <img key={index} src={element} alt="galleryImage" />
           ))}
         </div>
